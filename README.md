@@ -4,8 +4,11 @@ A over-complicated and buggy filehoster that uses mongodb
 # How to use
 ## Step 1
 Set the following Environmental Vars:
+  
   `db` - Your MongoDB URL
+  
   `adminusername` - Your admin username, will be explained later
+  
   `adminpassword` - Your admin username, will be explained later
 
 ## Step 2
