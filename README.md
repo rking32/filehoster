@@ -3,6 +3,7 @@ A over-complicated and buggy filehoster that uses mongodb
 
 # Badges
 [![Run on Repl.it](https://repl.it/badge/github/SnapDragon7410/filehoster)](https://repl.it/github/SnapDragon7410/filehoster)
+![Lint](https://github.com/SnapDragon7410/filehoster/workflows/.github/workflows/Lint.yml/badge.svg)
 
 # How to start
 ## Step 1
