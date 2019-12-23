@@ -59,8 +59,8 @@ def send(filename):
 def api():
     try:
         file = request.files.get("file")
-            if file is None or file.filename == "":
-                return jsonify({'success': False, 'error': ValueError("Invalid or empty file")})
+        if file is None or file.filename == "":
+            return jsonify({'success': False, 'error': ValueError("Invalid or empty file")})
         data = file.read()
         if len(data) > 1024*1024*1024*10:
             return jsonify({'success': False, 'error': ValueError("Limit to filesize is 10 GiB")})
