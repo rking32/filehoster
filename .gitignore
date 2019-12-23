@@ -3,4 +3,4 @@
 .gitconfig
 pyproject.toml
 poetry.lock
-main.pyc
+*.pyc
