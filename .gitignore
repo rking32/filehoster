@@ -1,0 +1,6 @@
+.env
+.replit
+.gitconfig
+project.lock
+pyproject.toml
+poetry.lock
