@@ -67,7 +67,7 @@ def upload():
   if len(data) >= 1024*1024*1024*10:
     return "Sorry but 10 GiB limit per file", 405
   db.insert_one({"filename": file.filename, "data": data}, bypass_document_validation=False)
-  return "<title>Done!</title>Saved Successfully"
+  return "<title>Done!</title>Saved Successfully<br/><br/><a href=/download/{}>Here</a> is your download link".format(file.filename)
 
 @app.route("/delete", methods=["DELETE"])
 def delete():
