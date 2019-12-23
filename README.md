@@ -7,9 +7,9 @@ Set the following Environmental Vars:
   
   `db` - Your MongoDB URL
   
-  `adminusername` - Your admin username, will be explained later
+  `adminuser` - Your admin username, will be explained later
   
-  `adminpassword` - Your admin username, will be explained later
+  `adminpass` - Your admin username, will be explained later
 
 ## Step 2
 Install requirements using the following command in terminal:
@@ -46,7 +46,7 @@ Then you will receive a json in the format of:
 
 ## yourlink.com/delete?user=user&pass=pass&filename=filename
 ## methods=["DELETE"]
-This is where `adminusername` and `adminpassword` will be explained!
+This is where `adminuser` and `adminpass` will be explained!
 
 If the user and pass is not the same as the adminusername and adminpassword it will throw a 405 Forbidden HTTP Error.
 
