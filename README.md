@@ -1,6 +1,9 @@
 # filehoster
 A over-complicated and buggy filehoster that uses mongodb
 
+# Badges
+[![Run on Repl.it](https://repl.it/badge/github/SnapDragon7410/filehoster)](https://repl.it/github/SnapDragon7410/filehoster)
+
 # How to start
 ## Step 1
 Set the following Environmental Vars:
