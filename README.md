@@ -24,15 +24,19 @@ python3 main.py
 ```
 
 # How to use
-## yourlink.com/upload methods=["GET", "POST"]
+## yourlink.com/upload
+## methods=["GET", "POST"]
 This is where you will be able to upload files through the UI
 
-## yourlink.com/download methods=["GET"]
+## yourlink.com/download
+## methods=["GET"]
 Here you will directed to a page where you can input your filename you have upload and be redirected to the download link
-### yourlink.com/download/<filename> methods=["GET"]
+### yourlink.com/download/&ltfilename&gt
+### methods=["GET"]
 Simply replace &ltfilename&gt with a filename of that has been uploaded
 
-## yourlink.com/api methods=["POST"]
+## yourlink.com/api
+## methods=["POST"]
 This is a simple api that can receive a file that has been sent. This must be sent in the request argument "files" and the in the format of `file=file` or `{"file": file}`.
 
 Then you will receive a json in the format of:
@@ -40,7 +44,8 @@ Then you will receive a json in the format of:
 {'success': True or False, 'error': ErrorType}
 ```
 
-## yourlink.com/delete?user=user&pass=pass&filename=filename methods=["DELETE"]
+## yourlink.com/delete?user=user&pass=pass&filename=filename
+## methods=["DELETE"]
 This is where `adminusername` and `adminpassword` will be explained!
 
 If the user and pass is not the same as the adminusername and adminpassword it will throw a 405 Forbidden HTTP Error.
