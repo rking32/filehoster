@@ -48,7 +48,7 @@ def send(filename):
 def api():
   try:
     file = request.files.get("file")
-    if file is None or file.filename is "":
+    if file is None or file.filename == "":
       return jsonify({'success': False, 'error': ValueError("Invalid or empty file")})
     data = file.read()
     if len(data) > 1024*1024*1024*10:
@@ -61,7 +61,7 @@ def api():
 @app.route("/upload/")
 def upload():
   file = request.files.get("img")
-  if file is None or file.filename is "":
+  if file is None or file.filename == "":
     return send_file("upload.html")
   data = file.read()
   if len(data) >= 1024*1024*1024*10:
