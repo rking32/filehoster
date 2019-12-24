@@ -60,14 +60,14 @@ def api():
     try:
         file = request.files.get("file")
         if file is None or file.filename == "":
-            return jsonify({'success': False, 'error': ValueError("Invalid or empty file")})
+            return jsonify({'success': False, 'error': str(ValueError("Invalid or empty file"))})
         data = file.read()
         if len(data) > 1024*1024*1024*10:
-            return jsonify({'success': False, 'error': ValueError("Limit to filesize is 10 GiB")})
+            return jsonify({'success': False, 'error': str(ValueError("Limit to filesize is 10 GiB"))})
         db.insert_one({"filename": file.filename, "data": data}, bypass_document_validation=False)
         return jsonify({'success': True, 'error': None})
     except Exception as e:
-        return jsonify({'success': False, 'error': e})
+        return jsonify({'success': False, 'error': str(e)})
 
 
 @app.route("/upload/")

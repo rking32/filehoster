@@ -1,5 +1,0 @@
-.env
-.gitconfig
-pyproject.toml
-poetry.lock
-*.pyc
