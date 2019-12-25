@@ -1,6 +1,6 @@
 [tool]
 [tool.poetry]
-authors = ["Your Name <you@example.com>"]
+authors = ["SnapDragon7410"]
 name = "root"
 version = "0.0.0"
 [tool.poetry.dependencies]

@@ -23,8 +23,18 @@ python3 -m pip install -r requirements.txt --user
 ## Step 3
 Start the service:
 ``` bash
-python3 main.py
+python3 -m filehoster
 ```
+
+# How to run on repl.it
+Press the `run on repl` badge at the top of the README.md
+Then in repl.it create a .env with the following details:
+```
+db = MongoDB-link
+adminuser = YourAdminUsername
+adminpass = YourAdminPassword
+```
+None of these should be in `""`
 
 # How to use
 ## yourlink.com/upload
