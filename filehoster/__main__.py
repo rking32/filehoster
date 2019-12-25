@@ -1,7 +1,6 @@
 from . import app, webapp
 import io
 from datetime import datetime
-import sys
 
 
 db = app.db
