@@ -45,7 +45,7 @@ class WebClient(flask.Flask):
         self._tracker["jsonify"].append(datetime.now())
         return flask.jsonify(*args, **kwargs)
 
-    def get_run(self, *args, **kwargs):
+    def get_start(self, *args, **kwargs):
         return Process(target=self.run, args=args, kwargs=kwargs)
 
     def get_creds(self):
